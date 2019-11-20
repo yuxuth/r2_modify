@@ -38,8 +38,8 @@ def update_fastq(r1, out_r1 ): ## process two files
 
 def pigz_fastq(filename,threads):
     test = subprocess.check_output(["ls", "-h"])
-    # compress = subprocess.check_output(["pigz", "-p",str(threads),filename])
-    compress = subprocess.check_output(["gzip",filename])
+    compress = subprocess.check_output(["pigz", "-p",str(threads),filename])
+    # compress = subprocess.check_output(["gzip",filename])
 
     return
 
